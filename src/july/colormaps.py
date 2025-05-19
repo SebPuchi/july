@@ -122,3 +122,16 @@ cmaps_dict["pastel_sunrise"] = LinearSegmentedColormap.from_list(
 cmaps_dict["pastel_sunrise_r"] = LinearSegmentedColormap.from_list(
     "", tups2cmap(pastel_sunrise_list, True)
 )
+
+
+
+sebas_sunrise_list = [
+    (249, 225, 224, 255),
+]
+
+cmaps_dict["sebas_sunrise"] = LinearSegmentedColormap.from_list(
+    "", tups2cmap(sebas_sunrise_list)
+)
+cmaps_dict["sebas_sunrise_r"] = LinearSegmentedColormap.from_list(
+    "", tups2cmap(sebas_sunrise_list, True)
+)
