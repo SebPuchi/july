@@ -38,6 +38,13 @@ github_list = [
 cmaps_dict["github"] = ListedColormap(tups2cmap(github_list))
 cmaps_dict["github_r"] = ListedColormap(tups2cmap(github_list, True))
 
+sebas_list = [
+    (64, 196, 99, 255),
+]
+cmaps_dict["sebas"] = ListedColormap(tups2cmap(sebas_list))
+cmaps_dict["sebas_r"] = ListedColormap(tups2cmap(sebas_list, True))
+
+
 sunset_list = [
     (255, 229, 119, 255),
     (254, 192, 81, 255),
