@@ -29,15 +29,12 @@ cmaps_dict["july_r"] = LinearSegmentedColormap.from_list("", tups2cmap(july_lst)
 cmaps_dict["july"] = LinearSegmentedColormap.from_list("", tups2cmap(july_lst, True))
 
 github_list = [
+    (235, 237, 240, 255),
+    (155, 233, 168, 255),
     (64, 196, 99, 255),
+    (48, 161, 78, 255),
+    (33, 110, 57, 255),
 ]
-#github_list = [
-#    (235, 237, 240, 255),
-#    (155, 233, 168, 255),
-#    (64, 196, 99, 255),
-#    (48, 161, 78, 255),
-#    (33, 110, 57, 255),
-#]
 
 cmaps_dict["github"] = ListedColormap(tups2cmap(github_list))
 cmaps_dict["github_r"] = ListedColormap(tups2cmap(github_list, True))
