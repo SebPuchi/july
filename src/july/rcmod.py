@@ -50,6 +50,14 @@ def update_rcparams(
     rcmod["ytick.major.size"] = ytickmajorsize
     rcmod["figure.dpi"] = dpi
     rcmod.update(rc_params_dict)
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore", mpl.cbook.MatplotlibDeprecationWarning)
-        mpl.rcParams.update(rcmod)
+    
+    # Use a more generic form of warning filtering that works across multiple versions
+    try:
+        warnings.simplefilter("ignore", category=mpl.MatplotlibDeprecationWarning)  # For older versions
+    except AttributeError:
+        warnings.simplefilter("ignore", category=DeprecationWarning) # For newer versions, or if the above fails
+
+
+
+
+
